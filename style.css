@@ -1,0 +1,288 @@
+/* 
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+ */
+
+ /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Cinzel-Bold', serif;
+}
+
+body {
+    background-color: #0b0d21; /* Dark, cosmic background */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 1.5rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?space,galaxy') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Services Section */
+.services {
+    padding: 5rem 2rem;
+    background-color: #10142f;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1a1f3d;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #bbb;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Blog Section */
+.blog {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post {
+    background-color: #1a1f3d;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    background-color: #10142f;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #0b0d21;
+    color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0b0d21;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer p {
+    color: #ccc;
+}
+
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer .social-links li {
+    margin: 0 1rem;
+}
+
+.footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #00bcd4;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .service-cards,
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Canvas styles to position it as a background */
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places the canvas behind other elements */
+    background-color: #0b0d21; /* Ensures a dark background in case no stars are drawn */
+}
