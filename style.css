@@ -131,18 +131,18 @@ body {
 }
 
 
-/* About Section */
-.about {
+/* Team Section */
+.team {
     padding: 5rem 2rem;
     text-align: center;
 }
 
-.about h2 {
+.team h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.about p {
+.team p {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.2rem;
