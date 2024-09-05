@@ -69,6 +69,7 @@ body {
     color: #cccccc;
 }
 
+
 /* Button Styles */
 .btn {
     background-color: #cccccc;
@@ -330,4 +331,138 @@ body {
     height: 100%;
     z-index: -1; /* Places the canvas behind other elements */
     background-color: #090a1b; /* Ensures a dark background in case no stars are drawn */
+}
+
+
+
+
+/* Global Mobile Styles */
+@media (max-width: 768px) {
+
+    /* Navbar for Mobile - Hamburger Menu */
+    .navbar .nav-links {
+        display: none; /* Hide the nav links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-bottom: 2px solid #cccccc;
+    }
+
+    .navbar .nav-links.show {
+        display: flex; /* Show nav links when the menu is open */
+    }
+
+    .navbar .nav-links li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .navbar .logo {
+        flex-grow: 1;
+    }
+
+    .navbar .hamburger {
+        color: #fff;
+    }
+}
+
+/* Hamburger Menu Styles for Desktop */
+.navbar .hamburger {
+    display: none; /* Hide the hamburger menu on desktop */
+}
+
+/* Media Queries for General Responsiveness */
+@media (max-width: 768px) {
+
+    /* Reduce hero section font size */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust the services section */
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%; /* Reduce card width on smaller screens */
+    }
+
+    /* Adjust blog post cards */
+    .post {
+        width: 90%;
+    }
+
+    /* Adjust contact form */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    /* Footer adjustments */
+    .footer p {
+        font-size: 1rem;
+    }
+
+    /* Flexbox for aligning content vertically on small screens */
+    .service-cards,
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Contact form responsiveness */
+    .contact-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    /* Footer social links adjustments */
+    .footer .social-links li {
+        margin: 0 0.5rem;
+    }
+
+}
+
+/* Add some padding to body to ensure the navbar does not overlap content */
+body {
+    padding-top: 70px; /* Offset the fixed navbar */
+}
+
+
+/* Responsive iframe for Google Form */
+#contact iframe {
+    width: 100%;
+    height: 680px;
+    max-width: 100%; /* Ensures it doesn't overflow on larger screens */
+    border: none;
+    margin: 0 auto;
+    display: block; /* Centers the form */
+}
+
+@media (max-width: 768px) {
+    #contact iframe {
+        height: 800px; /* Adjust the height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #contact iframe {
+        height: 900px; /* Further adjust height for very small screens */
+    }
 }
